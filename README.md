@@ -1,4 +1,4 @@
-# Sea of Thieves - External Tool Premium
+# 🏴‍☠️ Sea of Thieves - External Tool Premium
 Sea of Thieves - Advanced ESP /w ImGui for XBox Version (Steam has to be written)
 [![Discord](https://img.shields.io/discord/748288505507217428.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/AEfuvwT)
   
