@@ -6,7 +6,7 @@ Sea of Thieves - Advanced ESP /w ImGui for XBox Version (Steam has to be written
 ## How to:
 - Check latest game version (https://www.seaofthieves.com/pl/release-notes)
   - If it is the same as the version the ESP fits, then continue
-  - If it is not the same, go to https://github.com/xTeJk/SoT_ESP#offsets and update the offsets with the appropriate SDK for that version of the game
+  - If it is not the same, go to https://github.com/xTeJk/SoT_External_Tool_Premium#offsets and update the offsets with the appropriate SDK for that version of the game
 - Start game
 - Make sure you're in windowed mode
 - Update offsets
