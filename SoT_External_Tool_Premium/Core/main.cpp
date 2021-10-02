@@ -41,6 +41,11 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 		GLOBAL_DEFINITION::baseModuleSize = MemoryManager->baseModuleSize("SoTGame.exe");
 	}
 
+	/*
+	-> Initialize cheat
+		Rewrite code to check if its XBox or Steam version
+	*/
+
 	if (!GLOBAL_DEFINITION::UWorld)
 	{
 		address = MemoryManager->FindSignature(GLOBAL_DEFINITION::baseModule, GLOBAL_DEFINITION::baseModuleSize,
