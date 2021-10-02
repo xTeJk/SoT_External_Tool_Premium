@@ -31,7 +31,7 @@ If you want to use new features or get to know the SDK better, you can use this:
 - Panic Key: `END`
 
 ## Functions:
-(These are just a few of the features you'll find in the code!)
+(These are just a few of the features you'll find in the code!)  
 https://gyazo.com/7e2069856d981f2d8eafd2a74de1f8f1  
 https://gyazo.com/63fc540d6f0e35521fd73579c3ddfeaf  
 https://gyazo.com/9d73f9bf3764f46997042c5a920bf0b4  
