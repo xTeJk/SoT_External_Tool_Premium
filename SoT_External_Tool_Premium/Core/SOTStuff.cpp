@@ -44,7 +44,7 @@ UHealthComponent AActor::GetHealthComponent()
 
 UDrowningComponent ACharacter::GetDrowningComponent()
 {
-	return MemoryManager->Read< UDrowningComponent>(*(uintptr_t*)(__pad0x0 + 0xCA8)); // drowning component offset
+	return MemoryManager->Read< UDrowningComponent>(*(uintptr_t*)(__pad0x0 + Offsets.AActor.DrowningComponent));
 }
 
 TArray<Chunk*> ULevel::GetActors() const
@@ -74,7 +74,7 @@ AActor APlayerController::GetActor()
 
 ACharacter APlayerController::GetCharacter()
 {
-	return MemoryManager->Read<ACharacter>(*(uintptr_t*)(0x13E8)); // character offset
+	return MemoryManager->Read<ACharacter>(*(uintptr_t*)(__pad0x0 + Offsets.APlayerController.Character));
 }
 
 APlayerCameraManager APlayerController::GetCameraManager()
@@ -174,7 +174,7 @@ UCrewOwnershipComponent AShip::GetCrewOwnershipComponent()
 
 uintptr_t AShip::GetOwningActor()
 {
-	return *(uintptr_t*)(__pad0x0 + 0x3E0);
+	return *(uintptr_t*)(__pad0x0 + Offsets.AShip.ShipOwningActor);
 }
 
 TArray<struct FXMarksTheSpotMapMark> AXMarksTheSpotMap::GetMarks()
@@ -224,22 +224,22 @@ UItemDesc AItemInfo::GetItemDesc()
 
 float ACannon::GetTimePerFire()
 {
-	return *(float*)(__pad0x0 + 0x0588); // cannon offsets - ACannon
+	return *(float*)(__pad0x0 + Offsets.ACannon.TimePerFire);
 }
 
 float ACannon::GetProjectileSpeed()
 {
-	return *(float*)(__pad0x0 + 0x058C);
+	return *(float*)(__pad0x0 + Offsets.ACannon.ProjectileSpeed);
 }
 
 float ACannon::GetProjectileGravityScale()
 {
-	return *(float*)(__pad0x0 + 0x0590);
+	return *(float*)(__pad0x0 + Offsets.ACannon.ProjectileGravityScale);
 }
 
 float ACannon::GetServerPitch()
 {
-	return *(float*)(__pad0x0 + 0x072C);
+	return *(float*)(__pad0x0 + Offsets.ACannon.ServerPitch);
 }
 
 Vector2 AMapTable::GetServerCenter()
@@ -254,7 +254,7 @@ TArray<struct Vector2> AMapTable::GetMapPins()
 
 TArray<class FWorldMapShipLocation> AMapTable::GetTrackedShips()
 {
-	return *(TArray<class FWorldMapShipLocation>*)(__pad0x0 + 0x4F0); // tracked ships offset
+	return *(TArray<class FWorldMapShipLocation>*)(__pad0x0 + Offsets.AMapTable.TrackedShips);
 }
 
 TArray<struct Vector3> AMapTable::GetTrackedBootyItemLocations()

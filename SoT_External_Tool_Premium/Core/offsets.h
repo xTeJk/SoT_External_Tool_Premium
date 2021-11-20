@@ -25,6 +25,7 @@ public:
 	struct APlayerController
 	{
 		int Pawn = 0x3D8;
+		int Character = 0x3E8;
 		int CameraManager = 0x460;
 		int ControlRotation = 0x2D4;
 	}APlayerController;
@@ -69,7 +70,16 @@ public:
 	{
 		int CrewOwnershipComponent = 0x760;
 		int ShipInternalWaterComponent = 0x05E0;
+		int ShipOwningActor = 0x3E0;
 	}AShip;
+
+	struct ACannon
+	{
+		int TimePerFire = 0x5A0;
+		int ProjectileSpeed = 0x5A4;
+		int ProjectileGravityScale = 0x5A8;
+		int ServerPitch = 0x754;
+	}ACannon;
 
 	struct UCrewOwnershipComponent
 	{
@@ -85,7 +95,7 @@ public:
 	{
 		int ServerCenter = 0x4C0;
 		int MapPins = 0x4E0;
-		int TrackedShips = 0x484;
+		int TrackedShips = 0x4F0;
 	}AMapTable;
 
 	struct ACrewService
